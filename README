@@ -1,0 +1,61 @@
+AntiDoS-P is a module for XOOPS2.
+
+This module can possibly protects your XOOPS from continuously access (DoS attack).
+In AntiDos-P 1.1 and later, this module also checks the atempting crack by injecting globals.
+It must be useful for security of your site, even if the setting of register_globals is either On or Off.
+
+Install this from module manager.
+In group manager, turn the permissions on to all groups without admin.
+Put 'AntiDoS block' on the top of left blocks from block manager.
+Set 'AntiDoS block' visible in all pages.
+Set yes SystemAdmin -> Preferences -> General Settings -> Enable IP bans
+
+When DoS attack has come:
+
+1) warn in 1st stage.
+2) register bad IP of XOOPS core if the attack don't stop.
+   you see the bad IP in SystemAdmin -> Preferences -> 
+   General Settings -> "Enter IP addresses that should be banned ...".
+
+When attack by injecting globals has come:
+
+1) There is nothing to output.
+2) register bad IP of XOOPS core.
+   you see the bad IP in SystemAdmin -> Preferences -> 
+   General Settings -> "Enter IP addresses that should be banned ...".
+
+You can see and remove the baned IPs in your preferences.
+
+
+CHANGES:
+
+1.10
+ - added a protection from injecting globals attack.
+ - added myblocksadmin
+ - turn 'Enable IP bans?' on when this module is newly installed.
+
+1.00
+ - the 1st release
+
+
+
+
+Requirements:
+ - XOOPS 2.0 and later
+ - php 4.1.0 and later
+
+
+Thanks to:
+
+
+GIJ=CHECKMATE <gij@peak.ne.jp>
+2003
+
+
+
+p.s.
+
+If you create a language files for this module, contact to me.
+I will register it in AntiDoS-P archive.
+
+
